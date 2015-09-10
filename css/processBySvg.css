@@ -1,0 +1,127 @@
+ul.processtreeul,li.processtreeli{
+    list-style: none;
+}
+ul.processtreeul{
+    padding-left: 15px;margin-top: 0;margin-bottom: 0;
+}
+li.processtreeli{
+    
+}
+li .processnode{
+    overflow: hidden;
+    border: 1px solid #c7d8e7;
+    height: 25px;
+    line-height: 25px;
+    border-radius:15px 5px 5px 15px;
+    margin-top: 5px; 
+}
+li .processtreeliname,li .processtreeliLineend,li .processtreeliLinesibl{
+    float: left;
+}
+li .processtreeliname{
+    background-color: #f4faff;padding:0 10px 0 30px;font-size: 12px;color: #555555;font-weight: bold;border-right:1px solid #ddebf7; position: relative;
+}
+li .processtreelimsg {
+    margin-left: 10px;color: #888888;font-size: 12px;
+}
+
+li .processtreelimsg span{
+    margin-left:5px;
+}
+li .processtreelimsg .spanm15{
+    margin-left:15px;
+}
+li .processtreelimsg .spanvalue{
+    font-weight:bold;
+}
+
+li .processtreelimsg .prounit{
+    color: #555555;
+}
+li .processtreelimsg .prospanred{
+    color: #df4c4c;
+}
+li .processtreelimsg .prospangreen{
+    color: #3aa41a;
+}
+li .processtreelimsg .prounitblue{
+    color: #4486c2;
+}
+
+li .processtreeliLineend{
+    width: 15px;height: 30px;background: url(../img/endchildLine.png) no-repeat 0 center;
+}
+li .processtreeliLinesibl{
+    width: 15px;height: 30px;background: url(../img/sibchildLine.png) no-repeat center;
+}
+
+
+li .processtreetoggle {
+    display: none;cursor: pointer;position: absolute;left: 2px;top: 0; height: 25px;width: 25px;
+}
+li .processtreetoggle.processopenchild{
+    display: block;
+    background: url(../img/back.png) 2px center no-repeat #f4faff;
+}
+li .processtreetoggle.processclosechild {
+    display: block;
+    background: url(../img/stretch.png) 2px center no-repeat #f4faff;
+}
+
+/*流程图样式-开始*/
+svg.processvg{
+    position: relative;display: block;
+}
+svg.processvg text{
+    font-family: 微软雅黑;
+    text-anchor:middle;
+    
+    fill:#555555;
+    color: #555555;
+}
+svg.processvg rect{
+    cursor: pointer;
+}
+svg.processvg .probox{
+    fill:#fff;stroke:#666666;stroke-width:1;opacity:0.5;
+}
+svg.processvg rect.probox.close {
+    /*fill: #b6ff00; stroke:#555555;*/
+}
+svg.processvg .protoggle{
+    opacity :0.9;
+}
+svg.processvg .protoggle.hide{
+    fill: transparent;
+}
+svg.processvg .protoggleMsg{
+    fill: black;font-size: 16px;
+}
+svg.processvg .proboxTit{
+    font-size:14px;font-weight:bold;
+}
+svg.processvg .proboxMsg{
+    font-size:10px;
+}
+svg.processvg .pierrePath{
+    fill:transparent;stroke:#cccccc;stroke-width:1;
+}
+svg.processvg .proboxspline{
+    stroke:#cccccc;stroke-width:1;
+}
+svg.processvg text .prounit{
+    fill: #555555;
+}
+svg.processvg text .prospanred{
+    fill: #df4c4c;
+}
+svg.processvg text .prospangreen{
+    fill: #3aa41a;
+}
+svg.processvg text .prounitblue{
+    fill: #4486c2;
+}
+svg.processvg text .spanvalue {
+    font-weight: bold;
+}
+/*流程图样式-结束*/

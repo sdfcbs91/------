@@ -1,0 +1,26 @@
+<!--<!DOCTYPE html>-->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<html xmlns:svg="http://www.w3.org/2000/svg">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+        <title>流程图</title>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/processBySvg.js"></script>
+        <script src="js/controls.js"></script>
+        <link href="css/processBySvg.css" rel="stylesheet" type="text/css"/>
+        <style type="text/css">
+            .main {
+                height: 600px;width: 900px;margin:20px auto;position:relative;border: 1px solid #ccc;overflow: auto;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <span>控件类型:</span><select name="controlType"><option value="tree">树形控件</option><option value="process">流程图控件</option></select>
+        <span>流程图线类型:</span><select name="processType"><option value="straightline">直线</option><option value="brokenline">折线</option><option value="pierreTline">弧线</option></select>
+        <div class="main">
+            
+        </div>
+        </body>
+</html>
